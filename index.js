@@ -37,6 +37,8 @@ mongoose
     }
 
     return Recipe.create(recipe1)
+    // I think the .save method would work here aswell, had we previously defined recipe1 as a new Recipe...
+    // then it would be <return recipe1.save()>
   })
   .then((x)=>{
     console.log("Single recipe added: ", x)
